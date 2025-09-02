@@ -34,6 +34,9 @@ public class Document {
         String texteEffacer = texte.substring(debut, fin) + texte.charAt(fin);
         remplacer(debut, fin, "");
     }
+    public void clear(){
+        texte = "";
+    }
     @Override
     public String toString() {
         return this.texte;
