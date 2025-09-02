@@ -2,6 +2,7 @@ package fr.umontpellier.iut.commande.factory;
 
 import fr.umontpellier.iut.commande.Commande;
 import fr.umontpellier.iut.commande.CommandeAjouter;
+import fr.umontpellier.iut.commande.CommandeRemplacer;
 import fr.umontpellier.iut.document.Document;
 
 public class CommandeFactory {
@@ -21,6 +22,7 @@ public class CommandeFactory {
         switch (name) {
             case "ajouter" : return new CommandeAjouter(document, parameters);
             default: return null;
+            case "remplacer" : return new CommandeRemplacer(document, parameters);
         }
     }
 
