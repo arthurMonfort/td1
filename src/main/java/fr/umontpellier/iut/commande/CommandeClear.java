@@ -9,7 +9,7 @@ public class CommandeClear extends CommandeDocument {
     @Override
     public void executer() {
         this.document.clear();
-        this.document.ajouter("bug AHAHA");
+        //ttg
         super.executer();
     }
 }

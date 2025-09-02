@@ -31,7 +31,6 @@ public class Document {
         remplacer(debut, fin, texteMaj.toUpperCase());
     }
     public void effacer(int debut, int fin){
-        String texteEffacer = texte.substring(debut, fin) + texte.charAt(fin);
         remplacer(debut, fin, "");
     }
     public void clear(){
